@@ -1,6 +1,6 @@
 # myo-tests
 
-[![Build Status](https://travis-ci.com/ltetzlaff/myo-tests.svg?token=<token>&branch=master)](https://travis-ci.com/ltetzlaff/myo-tests)
+[![Build Status](https://travis-ci.org/ltetzlaff/myo-tests.svg?branch=master)](https://travis-ci.org/ltetzlaff/myo-tests)
 
 ## Setup (in ./)
 
@@ -25,7 +25,6 @@ or run this to build only once:
 ```bash
 npm run buildOnce
 ```
-
 
 ## Contribution
 

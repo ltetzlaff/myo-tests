@@ -5,8 +5,7 @@
   "scripts": {
     "build": "webpack --watch",
     "buildOnce": "webpack",
-    "test": "npm run buildOnce && node tests/test.js",
-    "prepublish": "npm run buildOnce"
+    "test": "npm run buildOnce"
   },
   "files": [
     "public"
