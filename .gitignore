@@ -1,0 +1,6 @@
+public/dist/**/*
+!**/readme.md
+
+node_modules
+tests/*.js
+tests/*.js.map

@@ -1,0 +1,31 @@
+{
+  "name": "myo-tests",
+  "version": "1.0.0",
+  "description": "Tests for the TS reimplementation of myo.js",
+  "scripts": {
+    "build": "webpack --watch",
+    "buildOnce": "webpack",
+    "test": "npm run buildOnce && node tests/test.js",
+    "prepublish": "npm run buildOnce"
+  },
+  "files": [
+    "public"
+  ],
+  "main": "public/dist/bundle",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ltetzlaff/myo-tests.git"
+  },
+  "author": "ltetzlaff",
+  "license": "All rights reserved.",
+  "dependencies": {
+    "dom-loaded": "^1.0.1",
+    "events": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.47",
+    "ts-loader": "^3.1.1",
+    "typescript": "^2.6.1",
+    "webpack": "^3.8.1"
+  }
+}

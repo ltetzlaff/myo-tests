@@ -1,0 +1,13 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+      "module": "none",
+      "moduleResolution": "node",
+      "target": "esnext",
+      "lib": [ "dom", "scripthost" ],
+      "sourceMap": true,
+      "declaration": false,
+      "strict": true,
+      "outDir": "dist"
+  }
+}
