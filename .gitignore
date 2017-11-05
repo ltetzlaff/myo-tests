@@ -1,5 +1,5 @@
-public/dist/**/*.js
-public/dist/**/*.js.map
+public/**/*.js
+public/**/*.js.map
 !**/readme.md
 
 node_modules
