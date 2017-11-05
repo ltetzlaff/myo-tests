@@ -1,41 +1,24 @@
-const frontend = {
-  entry: "./src/index.ts",
-  output: {
-    filename: "public/dist/bundle.js"
-  },
-  module: {
-    rules: [
-      {
+const config = (entry, outfile, node= false) => {
+  return {
+    entry,
+    output: {
+      filename: outfile
+    },
+    target: node ? "node" : "web",
+    module: {
+      rules: [{
         test: /\.tsx?$/,
         loader: "ts-loader",
-        exclude: /(node_modules)|(tests)/,
-      }
-    ]
-  },
-  resolve: {
-    extensions: [".tsx", ".ts", ".js"]
+        exclude: /node_modules/,
+      }],
+    },
+    resolve: {
+      extensions: [".tsx", ".ts", ".js"]
+    }
   }
 }
 
-const tests = {
-  entry: "./tests/tests.ts",
-  target: "node",
-  output: {
-    filename: "tests/tests.js"
-  },
-  module: {
-    rules: [
-      {
-        test: /\.tsx?$/,
-        loader: "ts-loader",
-        exclude: /(node_modules)/,
-      }
-    ]
-  },
-  resolve: {
-    extensions: [".tsx", ".ts", ".js"]
-  }
-}
-
-
-module.exports = [ frontend, tests ]
+module.exports = [
+  config("./src/deviceGraphs.ts", "public/deviceGraphs/index.js"),
+  config("./src/poseDetector.ts", "public/poseDetector/index.js")
+]
