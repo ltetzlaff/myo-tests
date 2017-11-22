@@ -19,6 +19,6 @@ const config = (entry, outfile, node= false) => {
 }
 
 module.exports = [
-  config("./src/deviceGraphs.ts", "public/deviceGraphs/index.js"),
+  config("./src/emgGraphs.ts", "public/deviceGraphs/index.js"),
   config("./src/poseDetector.ts", "public/poseDetector/index.js")
 ]

@@ -1,6 +1,5 @@
 import * as domLoaded from "dom-loaded"
 import { myoManager } from "myo"
-//import $ from "jquery"
 import "flot"
 declare var $: any
 
